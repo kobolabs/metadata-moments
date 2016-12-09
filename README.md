@@ -194,11 +194,11 @@ still send metadata as it will be stored until we support this date field.
 • Price Effective Date composites allow you to schedule promotional prices with
 your ONIX feed. 
 
-• Some best practices include:
+**Some best practices include:
 
 1.Your starting regular price must have an end date. Otherwise, our system
-won’t know to look for a new price.
-2.The promo price must have both a start and end date.
+won’t know to look for a new price.</br>
+2.The promo price must have both a start and end date.</br>
 3.Your regular price is reinstated by including a new start date. All dates are
 inclusive: they start at 0:00 EST and end at 23:59 EST of the specified
 date.
