@@ -341,7 +341,7 @@ best practice to include it.
 * Representing a number with a text value (e.g. "sixteen" rather than "16”).
 * Adding characters that are not numbers (e.g. "18+" or “18 and up” rather than "18").</br>
   
-  **Onix 2.1 and 3.0 Composite:**</br>
+__Onix 2.1 and 3.0 Composite:__</br>
 For example, the following composite tells us that this title is for Interest Ages 8-12:
 </br>`<audiencerange>`</br>
 `<b074>17</b074>`</br>
@@ -350,6 +350,8 @@ For example, the following composite tells us that this title is for Interest Ag
 `<b075>04</b075>` {Indicates “to”}</br>
 `<b076>12</b076>` {Indicates maximum age}</br>
 `</audiencerange>`</br>
+
+
 This example tells us this title is for Interest Ages 6+:</br>
 `<AudienceRange>`</br>
 `<AudienceRangeQualifier>17</AudienceRangeQualifier>`</br>
