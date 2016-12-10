@@ -176,20 +176,20 @@ Dates matter! This is one of the most important pieces of information to be incl
 **_Publication Date_**</br>
 
 • Your eBook's publication date is what appears on the product/item page on the
-Kobo store. It is a display value only and does not trigger sales.
+Kobo store. It is a display value only and does not trigger sales.</br>
 • If no publication date is included, the default date is set to December 2009. 
 
 **_On Sale Date/Embargo date_**</br>
 
 • The On Sale Date is when your title is made active on site. If your book is
 available for preorder, it is the date it goes from preorder to regular sale. This is
-also the date the epub will be available for download to customer libraries.
+also the date the epub will be available for download to customer libraries.</br>
 • If a Publication Date set in the future is provided but an On Sale Date is missing,
 the default On Sale Date will match the Publication Date. If the Publication Date
 is set in the past or is missing, the default On Sale Date will be the date metadata
-is loaded.
-*In ONIX 3.0 the Embargo Date should be used as the On Sale Date field is
-deprecated.
+is loaded.</br>
+_In ONIX 3.0 the Embargo Date should be used as the On Sale Date field is
+deprecated._
 
 **_Announcement date_**</br>
 
@@ -210,22 +210,22 @@ won’t know to look for a new price.</br>
 inclusive: they start at 0:00 EST and end at 23:59 EST of the specified
 date.
 
-**tags:**</br>
+**Tags:**</br>
 • **_Publication Date_** </br>
 
 ONIX 2.1</br>
-Reference name:
+Reference name:</br>
 `<PublicationDate>20130315</PublicationDate>`</br>
-Short tag:
+Short tag:</br>
 `<b003>20130315</b003>`</br>
 
 ONIX 3.0</br>
-Reference name:
+Reference name:</br>
 `<PublishingDate>`</br>
 `<PublishingDateRole>01</PublishingDateRole>`</br>
 `<Date>20150919</Date>`</br>
 `</PublishingDate>`</br>
-Short tag:
+Short tag:</br>
 `<publishingdate>`</br>
 `<x448>01</x448>`</br>
 `<b306>20150919</b306>`</br>
@@ -283,7 +283,7 @@ ONIX 2.1 example (with embedded notes for clarification):</br>
 `<j152>USD</j152>`</br>
 `<j162>20151222</j162>`</br>
 `</price>`</br>
---- the above price will end at 23:59 EST on Dec 22</br>
+**--- the above price will end at 23:59 EST on Dec 22**</br>
 `<price>`</br>
 `<j148>41</j148>`</br>
 `<j151>3.99</j151>`</br>
@@ -291,15 +291,15 @@ ONIX 2.1 example (with embedded notes for clarification):</br>
 `<j161>20151223</j161>`</br>
 `<j162>20151230</j162>`</br>
 `</price>`</br>
---- the promo price starts at 0:00 EST Dec 23 and ends 23:59 EST Dec 30</br>
+**--- the promo price starts at 0:00 EST Dec 23 and ends 23:59 EST Dec 30**</br>
 `<price>`</br>
 `<j148>41</j148>`</br>
 `<j151>7.99</j151>`</br>
 `<j152>USD</j152>`</br>
 `<j161> 20151231</j161>`</br>
 `</price>`</br>
---- the regular price is reinstated at 0:00 EST Dec 31</br>
-Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and PriceDateRole 15 = Until Date</br>
+**--- the regular price is reinstated at 0:00 EST Dec 31</br>
+Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and PriceDateRole 15 = Until Date**</br>
 `<Price>`</br>
 `<PriceType>01</PriceType>`</br>
 `<PriceAmount>10.00</PriceAmount>`</br>
@@ -309,7 +309,7 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `<Date>20151221</Date>`</br>
 `</PriceDate>`</br>
 `</Price>`</br>
---- the above price will end at 23:59 EST on Dec 21</br>
+**--- the above price will end at 23:59 EST on Dec 21**</br>
 `<Price>`</br>
 `<PriceType>01</PriceType>`</br>
 `<PriceAmount>8.00</PriceAmount>`</br>
@@ -323,7 +323,7 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `<Date>20151230</Date>`</br>
 `</PriceDate>`</br>
 `</Price>`</br>
---- the promo price starts at 0:00 EST on Dec 22 and ends 23:59 EST Dec 30</br>
+**--- the promo price starts at 0:00 EST on Dec 22 and ends 23:59 EST Dec 30**</br>
 `<Price>`</br>
 `<PriceType>01</PriceType>`</br>
 `<PriceAmount>10.00</PriceAmount>`</br>
@@ -332,4 +332,4 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `<PriceDateRole>14</PriceDateRole>`</br>
 `<Date>20151231</Date> </PriceDate>`</br>
 `</Price>`</br>
---- the regular price is reinstated at 0:00 EST on Dec 31</br>
+**--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
