@@ -1,7 +1,6 @@
 #Kobo Metadata Moments - A compilation
 
-What's in this document:
-A complilation of all the metadata moments shared by Kobo on the Kobo Publishers’ Newsletter.
+Recommendations and tips for producing better content on Kobo!
 
   
 ### Table of Contents
@@ -358,3 +357,57 @@ This example tells us this title is for Interest Ages 6+:</br>
 `<AudienceRangePrecision>03</AudienceRangePrecision>`</br>
 `<AudienceRangeValue>6</AudienceRangeValue>`</br>
 `</AudienceRange>`</br>
+
+
+## Prices and Price Type Codes
+ 
+When sending multiple prices for your books, it’s important to use the correct price type code in order for prices to display properly in each territory. Price type codes specify the type of price submitted (e.g. agency, wholesale, IPP) and indicates if the price includes or excludes tax.
+ 
+The field is `<PriceTypeCode>` in ONIX 2.1 and `<PriceType>` in ONIX 3.0.
+ 
+__Prices without tax included (CA and US)__
+ 
+01 – Wholesale prices in Canada and the US, without tax included
+41 – Agency prices in Canada and the US, without tax included
+03 – IPP prices in Canada and the US, without tax included
+ 
+__Prices with tax included (EU, UK, and AU)__
+ 
+02 – Wholesale prices in the EU, UK, and AU, with tax included
+42 – Agency prices in the EU, UK, and AU, with tax included
+04 – IPP prices in the EU, UK, and AU, with tax included
+ 
+Remember: Publishers must submit prices that correspond with their territory and contract type.
+ 
+#### Best Practices
+Use periods or commas to indicate decimals but DO NOT use both.
+Use whole numbers for Japanese yen (JPY) prices and Mexican pesos (MXN) — no decimals, please!
+Free books can be submitted as 0.00 or 0.
+Avoid sending 0.01 prices or no prices or your metadata update will fail.
+ 
+#### Reminders for Excel Publishers
+Format prices as Numbers (not ‘General’).
+Do not include currency symbols (e.g. $).
+Use upper-case letters for currency codes.
+ 
+#### Examples of Correct Usage
+
+  * Excel
+Note: Excel publishers do not need to specify price type codes. Publishers populate the price and currency fields, and Kobo will automatically use the correct code.
+ 
+Price: 7.99
+Currency: CAD
+
+  * ONIX 2.1</br>
+`<price> `   </br>       
+`<j148 refname="PriceTypeCode">04</j148>`</br>
+`<j151 refname="PriceAmount">3.99</j151>`</br>
+`<j152 refname="CurrencyCode">EUR</j152>`</br>
+`</price>`</br>
+
+  * ONIX 3.0</br>
+`<price>`        </br>   
+`<j148 refname="PriceType">01</j148>`</br>
+`<j151 refname="PriceAmount">3.99</j151>`</br>
+`<j152 refname="CurrencyCode">USD</j152>`</br>
+`</price>`</br>
