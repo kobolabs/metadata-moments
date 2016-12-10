@@ -6,21 +6,23 @@ A compilation of the technicals tips from Kobo Publisher's Newsletters.
   
 ### Table of Contents
 
-1. [Titles & Subtitles](#titles--subtitles)
-2. [Publishing Status](#publishing-status)
-3. [Category codes](#category-codes)
-4. [Be Aware of your Dates](#be-aware-of-your-dates)
-5. [Audience Ranges](#audience-ranges)
-6. [Prices and Price Type Codes](#prices-and-price-type-codes)
-7. [Sales Rights](#sales-rights)
-8. [Related Product](#related-product)
-9. [TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobos-launch-in-turkey)
-10. [BISAC codes](#bisac-codes)
-11. [Announcement Date](#announcement-date)
-12. [Master Brand](#master-brand)
-13. [Price Effective Dates](#price-effective-dates)
-14. [YAN/YAF BISAC](#yanyaf-bisac)
-15. [New country store view on Kobo.com](#new-country-store-view-on-kobo-com)
+1. August 2015, [Titles & Subtitles](#titles--subtitles)
+2. September 2015, [Publishing Status](#publishing-status)
+3. October 2015, [Audience Ranges](#audience-ranges)
+4. November 2015, [Category codes](#category-codes)
+5. December 2015, [Be Aware of your Dates](#be-aware-of-your-dates)
+6. February 2016, [Prices and Price Type Codes](#prices-and-price-type-codes)
+7. March 2016, [Sales Rights](#sales-rights)
+8. April 2016, [Related Product](#related-product)
+9. May 2016, [TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobos-launch-in-turkey)
+10. June 2016, [BISAC codes](#bisac-codes)
+11. July 2016, [Announcement Date](#announcement-date)
+12. August 2016, [Master Brand](#master-brand)
+13. September 2016, [Price Effective Dates](#price-effective-dates)
+14. November 2016, [YAN/YAF BISAC](#yanyaf-bisac)
+15. December 2016, [New country store view on Kobo.com](#new-country-store-view-on-kobocom)
+
+ 
 
 
 ## Titles & Subtitles 
@@ -684,3 +686,4 @@ __Short Tags:__</br>
 You may have noticed that we have recently made some adjustments to our store page at www.kobo.com. You can now see how our store looks in different countries throughout the world. When you first visit the online store, you will see a welcome screen where you can choose your country. You can also change your country by clicking on the flag icon on our main page, and can now choose from 36 different countries.
  
 [Try it out >](http://kobo.us5.list-manage.com/track/click?u=c032db3d20aa5ba495901131a&id=af4b6a1be6&e=899d096d2f)
+
