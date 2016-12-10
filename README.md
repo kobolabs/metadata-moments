@@ -638,7 +638,7 @@ __Requirements to schedule a price promo:__
 [Click here](#-price-effective-dates-onix-only-) for example of a sample scheduled price reduction, with embedded comments for clarification.
 
 
-## YAN/YAF
+## YAN/YAF BISAC
  
 In 2015, BISG introduced Young Adult Fiction (YAF) and Young Adult Nonfiction (YAN) subject codes to replace JNF and JUV codes aimed at young adult readers. Kobo accepts all YAF and YAN BISAC codes. Like JNF and JUV codes, using accurate YAF and YAN BISAC codes will allow books to be included in our kids’ store. The new YA BISAC codes make it easier for a growing customer base of young adult readers to discover new books on Kobo.
  
