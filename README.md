@@ -435,4 +435,58 @@ Please use upper-case characters and separate each territory with a space in `<R
 Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>` https://www.medra.org/stdoc/onix-codelist-91.htm 
 Excel (column V Excel template): Leave this field blank if you have world rights. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma. For example: CA, US, GB
  
-For full ONIX composites, read more >
+ 
+## Related Product
+
+Related Product links a product’s eISBN to its related product identifiers, such as its print ISBN. We strongly recommend sending Related Product information. While Kobo itself does not use the `<RelatedProduct>` composite in our store, many of our partners who sell physical books use it to link the ebook and print product pages, which increases potential for discoverability and sales.
+ 
+For publishers sending Excel metadata, Related ISBN details are conveyed in the “Related ISBN” field. While optional, supplying this information is strongly recommended. Only one related ISBN is allowed per ebook. The Related ISBN must be exactly 13 digits with no spaces in order for our system to process it successfully.
+ 
+In ONIX 2.1 and 3.0, multiple Related Products are permitted, as long as the corresponding ISBNs are different in each Related Product composite.
+ 
+### ONIX 2.1 Composites</br>
+ 
+`<RelatedProduct>`</br>
+`<RelationCode>13</RelationCode>`</br>
+`<ProductIdentifier>`</br>
+`<ProductIDType>15</ProductIDType>`</br>
+`<IDValue>9782246731412</IDValue>`</br>
+`</ProductIdentifier>`</br>
+`<ProductForm>BA</ProductForm>`</br>
+`</RelatedProduct>`</br>
+ 
+Short Tags:</br>
+`<relatedproduct>`</br>
+`<h208>13</h208>`</br>
+`<productidentifier>`</br>
+`<b221>15</b221>`</br>
+`<b244>9783540261698</b244>`</br>
+`</productidentifier>`</br>
+`<b012>BA</b012>`</br>
+`</relatedproduct>`</br>
+ 
+### ONIX 3.0 Composites</br>
+ 
+`<RelatedProduct>`</br>
+`<ProductRelationCode>13</ProductRelationCode>`</br>
+`<ProductIdentifier>`</br>
+`<ProductIDType>15</ProductIDType>`</br>
+`<IDValue>9782246731412</IDValue>`</br>
+`</ProductIdentifier>`</br>
+`<ProductForm>BA</ProductForm>`</br>
+`</RelatedProduct>`</br>
+ 
+ Short Tags:</br>
+`<relatedproduct>`</br>
+`<x455>13</x455>`</br>
+`<productidentifier>`</br>
+`<b221>15</b221>`</br>
+`<b244>9783540261698</b244>`</br>
+`</productidentifier>`</br>
+`<b012>BA</b012>`</br>
+`</relatedproduct>`</br>
+
+### Notes:</br>
+* RelationCode and ProductRelationCode 13 equals ePublication based on (print product)
+* ProductIDType 15 equals ISBN-13
+* ProductForm BA equals Book
