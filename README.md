@@ -185,21 +185,143 @@ deprecated.
 **Announcement date**</br>
 
 • The date when a new product may be announced to the general public, typically
-triggering pre-order status.
+triggering pre-order status.</br>
 • Kobo reads and stores this tag but the functionality is not yet supported. You can
 still send metadata as it will be stored until we support this date field.
 
 **Dates in price composites (applies to ONIX metadata only)**</br>
 
 • Price Effective Date composites allow you to schedule promotional prices with
-your ONIX feed. 
+your ONIX feed. </br>
 
-**Some best practices include:
-
-1.Your starting regular price must have an end date. Otherwise, our system
+• Some best practices include:</br>
+1. Your starting regular price must have an end date. Otherwise, our system
 won’t know to look for a new price.</br>
-2.The promo price must have both a start and end date.</br>
-3.Your regular price is reinstated by including a new start date. All dates are
+2. The promo price must have both a start and end date.</br>
+3. Your regular price is reinstated by including a new start date. All dates are
 inclusive: they start at 0:00 EST and end at 23:59 EST of the specified
 date.
 
+**tags:**</br>
+• *Publication Date </br>
+
+ONIX 2.1
+Reference name:
+`<PublicationDate>20130315</PublicationDate>`</br>
+Short tag:
+`<b003>20130315</b003>`</br>
+
+ONIX 3.0
+Reference name:
+`<PublishingDate>`</br>
+`<PublishingDateRole>01</PublishingDateRole>`</br>
+`<Date>20150919</Date>`</br>
+`</PublishingDate>`</br>
+Short tag:
+`<publishingdate>`</br>
+`<x448>01</x448>`</br>
+`<b306>20150919</b306>`</br>
+`</publishingdate>`</br>
+
+Excel
+Publication Date: 2015-09-19
+
+• *On Sale Date/Embargo date</br>
+
+ONIX 2.1 (On Sale Date)</br>
+Reference name:
+`<OnSaleDate>20150219</OnSaleDate>`</br>
+Short tag:
+`<j143>20150219</j143>`
+
+ONIX 3.0 (Embargo Date):</br>
+Reference name:
+`<PublishingDate>`</br>
+`<PublishingDateRole>02</PublishingDateRole>`</br>
+`<Date>20150219</Date>`</br>
+`</PublishingDate>`</br>
+Short tag:
+`<publishingdate>`</br>
+`<x448>02</x448>`</br>
+`<b306>20150219</b306>`</br>
+`</publishingdate>`</br>
+
+Excel</br>
+OnSale Date: 2015-02-19
+
+• *Announcement date</br>
+
+ONIX 3.0</br>
+Reference name:
+`<PublishingDate>`</br>
+`<PublishingDateRole>09</PublishingDateRole>`</br>
+`<Date>20150219</Date>`</br>
+`</PublishingDate>`</br>
+Short tag:
+`<publishingdate>`</br>
+`<x448>09</x448>`</br>
+`<b306>20150219</b306>`</br>
+`</publishingdate>`</br>
+
+Excel
+Announcement Date: 2015-02-19
+
+• *Price Effective Dates [ONIX only] </br>
+
+ONIX 2.1 example (with embedded notes for clarification):</br>
+`<price>`</br>
+`<j148>41</j148>`</br>
+`<j151>7.99</j151>`</br>
+`<j152>USD</j152>`</br>
+`<j162>20151222</j162>`</br>
+`</price>`</br>
+--- the above price will end at 23:59 EST on Dec 22</br>
+`<price>`</br>
+`<j148>41</j148>`</br>
+`<j151>3.99</j151>`</br>
+`<j152>USD</j152>`</br>
+`<j161>20151223</j161>`</br>
+`<j162>20151230</j162>`</br>
+`</price>`
+--- the promo price starts at 0:00 EST Dec 23 and ends 23:59 EST Dec 30</br>
+`<price>`</br>
+`<j148>41</j148>`</br>
+`<j151>7.99</j151>`</br>
+`<j152>USD</j152>`</br>
+`<j161> 20151231</j161>`</br>
+`</price>`</br>
+--- the regular price is reinstated at 0:00 EST Dec 31</br>
+Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and PriceDateRole 15 = Until Date</br>
+`<Price>`</br>
+`<PriceType>01</PriceType>`</br>
+`<PriceAmount>10.00</PriceAmount>`</br>
+`<CurrencyCode>USD</CurrencyCode>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>15</PriceDateRole>`</br>
+`<Date>20151221</Date>`</br>
+`</PriceDate>`</br>
+`</Price>`</br>
+--- the above price will end at 23:59 EST on Dec 21</br>
+`<Price>`</br>
+`<PriceType>01</PriceType>`</br>
+`<PriceAmount>8.00</PriceAmount>`</br>
+`<CurrencyCode>USD</CurrencyCode>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>14</PriceDateRole>`</br>
+`<Date>20151222</Date>`</br>
+`</PriceDate>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>15</PriceDateRole>`</br>
+`<Date>20151230</Date>`</br>
+`</PriceDate>`</br>
+`</Price>`</br>
+--- the promo price starts at 0:00 EST on Dec 22 and ends 23:59 EST Dec 30</br>
+`<Price>`</br>
+`<PriceType>01</PriceType>`</br>
+`<PriceAmount>10.00</PriceAmount>`</br>
+`<CurrencyCode>USD</CurrencyCode>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>14</PriceDateRole>`</br>
+`<Date>20151231</Date> </PriceDate>`</br>
+`</Price>`</br>
+--- the regular price is reinstated at 0:00 EST on Dec 31</br>
