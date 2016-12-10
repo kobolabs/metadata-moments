@@ -19,7 +19,7 @@ A compilation of the technicals tips from Kobo Publisher's Newsletters.
 11. [Announcement Date](#announcement-date)
 12. [Master Brand](#master-brand)
 13. [Price Effective Dates](#price-effective-dates)
-14. [YAN/YAF BISAC](#yan-yaf-bisac)
+14. [YAN/YAF BISAC](#yanyaf-bisac)
 15. [New Geo Changer on Website](#new-geo-changer-on-website)
 
 
