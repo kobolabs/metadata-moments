@@ -635,4 +635,4 @@ __Requirements to schedule a price promo:__
 * Ensure the promo price has both a start and end date.
 * Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 EST and end at 23:59 EST of the specified date.
 
-[Click here](#price-effective-date-onix-only) for examples of a sample scheduled price reduction, with embedded comments for clarification.
+[Click here](#-price-effective-date-onix-only-) for examples of a sample scheduled price reduction, with embedded comments for clarification.
