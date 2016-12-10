@@ -635,4 +635,44 @@ __Requirements to schedule a price promo:__
 * Ensure the promo price has both a start and end date.
 * Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 EST and end at 23:59 EST of the specified date.
 
-[Click here](#-price-effective-dates-onix-only-) for examples of a sample scheduled price reduction, with embedded comments for clarification.
+[Click here](#-price-effective-dates-onix-only-) for example of a sample scheduled price reduction, with embedded comments for clarification.
+
+
+## YAN/YAF
+ 
+In 2015, BISG introduced Young Adult Fiction (YAF) and Young Adult Nonfiction (YAN) subject codes to replace JNF and JUV codes aimed at young adult readers. Kobo accepts all YAF and YAN BISAC codes. Like JNF and JUV codes, using accurate YAF and YAN BISAC codes will allow books to be included in our kids’ store. The new YA BISAC codes make it easier for a growing customer base of young adult readers to discover new books on Kobo.
+ 
+As with all other BISAC codes, publishers sending Excel metadata can enter YAF and YAN codes into the three “Categorization Code” fields.
+ 
+### __Tips:__
+YAF and YAN BISAC codes should be assigned to books aimed at ages 12-18 and grades 7-12.
+Basic mapping from the JUV and JNF BISAC codes to the new YAF and YAN BISAC Codes is included in the BISAC 2015 and 2016 Edition packages.
+Please do not mix young adult BISAC codes with juvenile or adult BISAC codes.
+ 
+### __Links:__
+YAF Codes: http://bisg.org/page/YAFiction
+YAN Codes: http://bisg.org/page/YANonFiction
+ 
+### __ONIX 2.1 and 3.0 Composites using YAF:__</br>
+`<Subject>`</br>
+`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>
+`<SubjectCode>YAF042000</SubjectCode>`</br>
+`</Subject>`</br>
+
+__Short Tags:__</br>
+`<Subject>`</br>
+`<b067>10</b067>`</br>
+`<b069>YAF042000</b069>`</br>
+`</Subject>`</br>
+
+### ONIX 2.1 and 3.0 Composites using YAN:</br>
+`<Subject>`</br>
+`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>
+`<SubjectCode>YAN006050</SubjectCode>`</br>
+`</Subject>`</br>
+
+__Short Tags:__</br>
+`<Subject>`</br>
+`<b067>10</b067>`</br>
+`<b069>YAN006050</b069>`</br>
+`</Subject>`</br>
