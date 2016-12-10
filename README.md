@@ -11,6 +11,7 @@ Recommendations and tips for producing better content on Kobo!
 4. [Be Aware of your Dates](#be-aware-of-your-dates)
 5. [Audience Ranges](#audience-ranges)
 6. [Prices and Price Type Codes](#prices-and-price-type-codes)
+7. [Sales Rights](#sales-rights)
 
 ## Titles & Subtitles 
  
@@ -399,15 +400,39 @@ Price: 7.99
 Currency: CAD
 
   * ONIX 2.1</br>
-`<price>`</br>       
+`<price>`</br>
 `<j148 refname="PriceTypeCode">04</j148>`</br>
 `<j151 refname="PriceAmount">3.99</j151>`</br>
 `<j152 refname="CurrencyCode">EUR</j152>`</br>
 `</price>`</br>
 
   * ONIX 3.0</br>
-`<price>`</br>   
+`<price>`</br>
 `<j148 refname="PriceType">01</j148>`</br>
 `<j151 refname="PriceAmount">3.99</j151>`</br>
 `<j152 refname="CurrencyCode">USD</j152>`</br>
 `</price>`</br>
+
+
+## Sales Rights
+
+The Sales Rights `<SalesRights>` composite is one of the most important ONIX fields in the metadata and should be carefully completed to respect publishing rights. The Sales Rights composite is a group of tags that specify the territorial sales rights chosen by the publisher for a given book, at a global product level. Publishers should clearly state the countries in which a product can be sold. You can also exclude specific countries if needed.
+ 
+### Best Practices
+The Sales Rights composite is a mandatory field in Onix 2.1 and 3.0. If the Sales Rights are missing in the metadata provided, the metadata will fail and not be ingested by our system.
+Please note that Kobo only supports 3 types of `<SalesRightsType>` (`<b089>`) values:</br>
+  * 01 - for sale (exclusive rights)</br>
+  * 02 - for sale (non-exclusive rights)</br>
+  * 03 - not for sale</br>
+
+You can consult the following the List 46: Sales rights type code: http://home.bic-media.com/onix_info/2-1-4/codelists/onix-codelist-46.htm
+To indicate sales rights use two-letter territory codes to specify where your ebook can be sold according to the rights your company holds. `<SalesRightsType>` is important in indicating specific type of rights held (exclusive, non-exclusive, not for sale, etc). Please see correct usage for how to declare sales rights in ONIX.
+
+### ONIX 2.1: </br>
+Please use upper-case characters and separate each territory with a space in `<RightsCountry>US CA</RightsCountry>`. World Rights should be indicated as `<RightsTerritory>WORLD</RightsTerritory>` https://www.medra.org/stdoc/onix-codelist-91.htm
+
+### ONIX 3.0:</br>
+Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>` https://www.medra.org/stdoc/onix-codelist-91.htm 
+Excel (column V Excel template): Leave this field blank if you have world rights. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma. For example: CA, US, GB
+ 
+For full ONIX composites, read more >
