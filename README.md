@@ -10,7 +10,7 @@ Recommendations and tips for producing better content on Kobo!
 3. [Category codes](#category-codes)
 4. [Be Aware of your Dates](#be-aware-of-your-dates)
 5. [Audience Ranges](#audience-ranges)
-
+6. [Prices and Price Type Codes](#prices-and-price-type-codes)
 
 ## Titles & Subtitles 
  
@@ -399,14 +399,14 @@ Price: 7.99
 Currency: CAD
 
   * ONIX 2.1</br>
-`<price> `   </br>       
+`<price>`</br>       
 `<j148 refname="PriceTypeCode">04</j148>`</br>
 `<j151 refname="PriceAmount">3.99</j151>`</br>
 `<j152 refname="CurrencyCode">EUR</j152>`</br>
 `</price>`</br>
 
   * ONIX 3.0</br>
-`<price>`        </br>   
+`<price>`</br>   
 `<j148 refname="PriceType">01</j148>`</br>
 `<j151 refname="PriceAmount">3.99</j151>`</br>
 `<j152 refname="CurrencyCode">USD</j152>`</br>
