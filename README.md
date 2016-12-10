@@ -69,7 +69,7 @@ any titles with value 00 (Unspecified).
 It’s important to note that Publishing Status is required in ONIX 3.0. And while it’s not required
 in ONIX 2.1 it is considered the best practice to include it.
 
-</br>`<PublishingStatus>04</PublishingStatus>`
+`<PublishingStatus>04</PublishingStatus>`</br>
 or
 `<b394>04</b394>`</br>
 
@@ -114,7 +114,7 @@ BISAC</br>
 `<SubjectCode>JNF028000</SubjectCode>`</br>
 `</Subject>`</br>
 BIC</br>
-`<BICMainSubject> YNU</BICMainSubject>`</br>
+`<BICMainSubject>YNU</BICMainSubject>`</br>
 
 
 **ONIX 2.1 Short tags**</br>
@@ -211,15 +211,15 @@ inclusive: they start at 0:00 EST and end at 23:59 EST of the specified
 date.
 
 **tags:**</br>
-• _Publication Date_ </br>
+• **_Publication Date_** </br>
 
-ONIX 2.1
+ONIX 2.1</br>
 Reference name:
 `<PublicationDate>20130315</PublicationDate>`</br>
 Short tag:
 `<b003>20130315</b003>`</br>
 
-ONIX 3.0
+ONIX 3.0</br>
 Reference name:
 `<PublishingDate>`</br>
 `<PublishingDateRole>01</PublishingDateRole>`</br>
@@ -234,7 +234,7 @@ Short tag:
 Excel
 Publication Date: 2015-09-19
 
-• _On Sale Date/Embargo date_</br>
+• **_On Sale Date/Embargo date_**</br>
 
 ONIX 2.1 (On Sale Date)</br>
 Reference name:</br>
@@ -257,7 +257,7 @@ Short tag:</br>
 Excel</br>
 OnSale Date: 2015-02-19
 
-• _Announcement date_</br>
+• **_Announcement date_**</br>
 
 ONIX 3.0</br>
 Reference name:</br>
@@ -274,7 +274,7 @@ Short tag:</br>
 Excel
 Announcement Date: 2015-02-19
 
-• _Price Effective Dates [ONIX only]_ </br>
+• **_Price Effective Dates [ONIX only]_** </br>
 
 ONIX 2.1 example (with embedded notes for clarification):</br>
 `<price>`</br>
