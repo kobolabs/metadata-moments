@@ -3,15 +3,6 @@
 What's in this document:
 A complilation of all the metadata moments shared by Kobo on the Kobo Publishers’ Newsletter.
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
   
 ### Table of Contents
 
@@ -19,6 +10,8 @@ A complilation of all the metadata moments shared by Kobo on the Kobo Publishers
 2. [Publishing Status](#publishing-status)
 3. [Category codes](#category-codes)
 4. [Be Aware of your Dates](#be-aware-of-your-dates)
+5. [Audience Ranges](#audience-ranges)
+
 
 ## Titles & Subtitles 
  
@@ -333,3 +326,33 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `<Date>20151231</Date> </PriceDate>`</br>
 `</Price>`</br>
 **--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
+
+
+
+## Audience Ranges
+
+Audience Range indicates the intended audience or readership age for a product. You may send
+a minimum age (“From”), a maximum age (“To”) or a range (“From” and “To”). Kobo uses an
+Audience Range Qualifier of 17 (Interest Age) and an age range between 0-17 to determine
+eligibility for our Kids’ Store. While Age Range is not required in ONIX 3.0 or ONIX 2.1 it is the
+best practice to include it.
+
+  **Common Errors:**
+* Representing a number with a text value (e.g. "sixteen" rather than "16”).
+* Adding characters that are not numbers (e.g. "18+" or “18 and up” rather than "18").
+
+  **Onix 2.1 and 3.0 Composite:**
+For example, the following composite tells us that this title is for Interest Ages 8-12:
+</br>`<audiencerange>`</br>
+`<b074>17</b074>`</br>
+`<b075>03</b075>` {Indicates “from”}</br>
+`<b076>8</b076>` {Indicates minimum age}</br>
+`<b075>04</b075>` {Indicates “to”}</br>
+`<b076>12</b076>` {Indicates maximum age}</br>
+`</audiencerange>`</br>
+This example tells us this title is for Interest Ages 6+:</br>
+`<AudienceRange>`</br>
+`<AudienceRangeQualifier>17</AudienceRangeQualifier>`</br>
+`<AudienceRangePrecision>03</AudienceRangePrecision>`</br>
+`<AudienceRangeValue>6</AudienceRangeValue>`</br>
+`</AudienceRange>`</br>
