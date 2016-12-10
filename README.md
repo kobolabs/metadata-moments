@@ -1,4 +1,4 @@
-![background sidebar image](https://github.com/kobolabs/epub-spec/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202016-02-22%2014.51.00.png)
+![background sidebar image](https://github.com/kobolabs/metadata-moments/blob/master/banner.jpg)
 
 #Kobo Metadata Moments - A compilation
 
