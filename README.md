@@ -229,18 +229,18 @@ Publication Date: 2015-09-19
 • *On Sale Date/Embargo date</br>
 
 ONIX 2.1 (On Sale Date)</br>
-Reference name:
+Reference name:</br>
 `<OnSaleDate>20150219</OnSaleDate>`</br>
-Short tag:
+Short tag:</br>
 `<j143>20150219</j143>`
 
 ONIX 3.0 (Embargo Date):</br>
-Reference name:
+Reference name:</br>
 `<PublishingDate>`</br>
 `<PublishingDateRole>02</PublishingDateRole>`</br>
 `<Date>20150219</Date>`</br>
 `</PublishingDate>`</br>
-Short tag:
+Short tag:</br>
 `<publishingdate>`</br>
 `<x448>02</x448>`</br>
 `<b306>20150219</b306>`</br>
@@ -252,12 +252,12 @@ OnSale Date: 2015-02-19
 • *Announcement date</br>
 
 ONIX 3.0</br>
-Reference name:
+Reference name:</br>
 `<PublishingDate>`</br>
 `<PublishingDateRole>09</PublishingDateRole>`</br>
 `<Date>20150219</Date>`</br>
 `</PublishingDate>`</br>
-Short tag:
+Short tag:</br>
 `<publishingdate>`</br>
 `<x448>09</x448>`</br>
 `<b306>20150219</b306>`</br>
@@ -282,7 +282,7 @@ ONIX 2.1 example (with embedded notes for clarification):</br>
 `<j152>USD</j152>`</br>
 `<j161>20151223</j161>`</br>
 `<j162>20151230</j162>`</br>
-`</price>`
+`</price>`</br>
 --- the promo price starts at 0:00 EST Dec 23 and ends 23:59 EST Dec 30</br>
 `<price>`</br>
 `<j148>41</j148>`</br>
