@@ -12,6 +12,7 @@ Recommendations and tips for producing better content on Kobo!
 5. [Audience Ranges](#audience-ranges)
 6. [Prices and Price Type Codes](#prices-and-price-type-codes)
 7. [Sales Rights](#sales-rights)
+8. [Related Product](#related-product)
 
 ## Titles & Subtitles 
  
