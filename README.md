@@ -1,6 +1,7 @@
 #Kobo Metadata Moments - A compilation
 
 Recommendations and tips for producing better content on Kobo!
+A compilation of the technicals tips from Kobo Publisher's Newsletters.
 
   
 ### Table of Contents
@@ -13,6 +14,14 @@ Recommendations and tips for producing better content on Kobo!
 6. [Prices and Price Type Codes](#prices-and-price-type-codes)
 7. [Sales Rights](#sales-rights)
 8. [Related Product](#related-product)
+9. [TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobo--launch-in-turkey)
+10. [BISAC codes](#bisac-codes)
+11. [Announcement Date](#announcement-date)
+12. [Master Brand](#master-brand)
+13. [Price Effective Dates](#price-effective-dates)
+14. [YAN/YAF BISAC](#yan-yaf-bisac)
+15. [New Geo Changer on Website](#new-geo-changer-on-website)
+
 
 ## Titles & Subtitles 
  
@@ -491,3 +500,87 @@ Short Tags:</br>
 * RelationCode and ProductRelationCode 13 equals ePublication based on (print product)
 * ProductIDType 15 equals ISBN-13
 * ProductForm BA equals Book
+
+
+## TRY pricing tips for Kobo’s launch in Turkey
+
+In light of our recent launch in Turkey, we are encouraging publishers with TR territory rights to consider including TRY prices in their metadata.  
+
+Some things to keep in mind if you’re planning to send TRY prices:
+Prices will be displayed with decimals included. (E.g. 1,000.99 TRY). They should not contain commas.
+TRY prices delivered via Kobo’s Excel template will be treated as tax-in prices in Turkey.
+Turkey is a VAT-inclusive territory, as such we recommend that prices delivered via ONIX be sent with the appropriate tax-in price types (02 for wholesale, 42 for agency). Please see examples below: 
+
+### ONIX 2.1</br>
+`<price>`</br>
+`<PriceTypeCode>42</PriceTypeCode>`</br>
+`<PriceAmount>1000.99</PriceAmount>`</br>
+`<CurrencyCode>TRY</CurrencyCode>`</br>
+`<CountryCode>TR</CountryCode>`</br>
+`</price>`</br>
+ 
+### ONIX 3.0</br>
+`<Price>`</br>
+`<PriceType>42</PriceType>`</br>
+`<PriceAmount>1000.99</PriceAmount>`</br>
+`<CurrencyCode>TRY</CurrencyCode>`</br>
+`<Territory>`</br>
+`<CountriesIncluded>TR</CountriesIncluded>`</br>
+`</Territory>`</br>
+`</Price>`</br>
+ 
+__Please note:__ If a publisher does not have the capability to include TRY prices in their metadata, depending on your agreement with Kobo, we will continue to convert from the list price and currency with TR territory rights into the local Turkish price.
+
+## BISAC Codes
+ 
+Having accurate category codes ensures that books are properly categorized in our store, making discoverability easier for customers. While we accept BIC and CLIL category codes as well, BISAC is the most common category code we receive, and our categorization structure is based on BISAC. Kobo accepts the complete 2015 BISAC list published by BISG, including the new young adult (YAF and YAN) categories.
+ 
+For publishers sending Excel metadata, category codes, including BISAC codes, are to be entered in the three “Categorization Code” and “Categorization Type” fields. The “Categorization Code” field is for the BISAC code itself (ex. FIC000000), while the “Categorization Type” field is for the type of category code you are using (ex. BISAC). Only one category code is permitted per cell. The BISAC code in the first “Categorization Code” field will be the book’s primary category.
+ 
+Kobo will display up to three category codes on a book’s product page, and we suggest you send three per product, with increasing precision, to ensure your target audience will find your books. While ONIX 2.1 and 3.0 allow for more than three category codes, only the first three categories listed will be shown on a product page.
+
+### ONIX 2.1 Composites</br>
+`<BASICMainSubject>YAF022000</BASICMainSubject>`</br>
+</br>
+`<Subject>`</br>
+ `<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>
+ `<SubjectCode>YAF042000</SubjectCode>`</br>
+`</Subject>`</br>
+
+__Short Tags:__</br>
+`<b064>YAF022000</b064>`</br>
+</br>
+`<Subject>`</br>
+`<b067>10</b067>`</br>
+`<b069>YAF042000</b069>`</br>
+`</Subject>`</br>
+
+### ONIX 3.0 Composites</br>
+`<Subject>`</br>
+`<MainSubject/>`</br>
+`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>
+`<SubjectCode>YAF022000</SubjectCode>`</br>
+`</Subject>`</br>
+</br>
+`<Subject>`</br>
+ `<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>
+ `<SubjectCode>YAF042000</SubjectCode>`</br>
+`</Subject>`</br>
+
+__Short Tags:__</br>
+`<Subject>`</br>
+`<x425/>`</br>
+`<b067>10</b067>`</br>
+`<b069>YAF022000</b069>`</br>
+`</Subject>`</br>
+</br>
+`<Subject>`</br>
+`<b067>10</b067>`</br>
+`<b069>YAF042000</b069>`</br>
+`</Subject>`</br>
+
+* `<BASICMainSubject>` = the primary category code (ONIX 2.1)
+* `<MainSubject/>` = the primary category code (ONIX 3.0)
+* `<SubjectSchemeIdentifier>` = category type
+* `<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>` = BISAC category type
+* `<Subject Code>` = category code
