@@ -1,3 +1,5 @@
+![background sidebar image](https://github.com/kobolabs/epub-spec/blob/master/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202016-02-22%2014.51.00.png)
+
 #Kobo Metadata Moments - A compilation
 
 Recommendations and tips for producing better content on Kobo!</br>
@@ -6,21 +8,21 @@ A compilation of the technicals tips from Kobo Publisher's Newsletters.
   
 ### Table of Contents
 
-1. August 2015, [Titles & Subtitles](#titles--subtitles)
-2. September 2015, [Publishing Status](#publishing-status)
-3. October 2015, [Audience Ranges](#audience-ranges)
-4. November 2015, [Category codes](#category-codes)
-5. December 2015, [Be Aware of your Dates](#be-aware-of-your-dates)
-6. February 2016, [Prices and Price Type Codes](#prices-and-price-type-codes)
-7. March 2016, [Sales Rights](#sales-rights)
-8. April 2016, [Related Product](#related-product)
-9. May 2016, [TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobos-launch-in-turkey)
-10. June 2016, [BISAC codes](#bisac-codes)
-11. July 2016, [Announcement Date](#announcement-date)
-12. August 2016, [Master Brand](#master-brand)
-13. September 2016, [Price Effective Dates](#price-effective-dates)
-14. November 2016, [YAN/YAF BISAC](#yanyaf-bisac)
-15. December 2016, [New country store view on Kobo.com](#new-country-store-view-on-kobocom)
+1. [Titles & Subtitles](#titles--subtitles)
+2. [Publishing Status](#publishing-status)
+3. [Audience Ranges](#audience-ranges)
+4. [Category codes](#category-codes)
+5. [Be Aware of your Dates](#be-aware-of-your-dates)
+6. [Prices and Price Type Codes](#prices-and-price-type-codes)
+7. [Sales Rights](#sales-rights)
+8. [Related Product](#related-product)
+9. [TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobos-launch-in-turkey)
+10. [BISAC codes](#bisac-codes)
+11. [Announcement Date](#announcement-date)
+12. [Master Brand](#master-brand)
+13. [Price Effective Dates](#price-effective-dates)
+14. [YAN/YAF BISAC](#yanyaf-bisac)
+15. [New country store view on Kobo.com](#new-country-store-view-on-kobocom)
 
  </br></br>
 
