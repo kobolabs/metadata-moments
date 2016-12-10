@@ -1,6 +1,6 @@
 #Kobo Metadata Moments - A compilation
 
-Recommendations and tips for producing better content on Kobo!
+Recommendations and tips for producing better content on Kobo!</br>
 A compilation of the technicals tips from Kobo Publisher's Newsletters.
 
   
@@ -20,7 +20,7 @@ A compilation of the technicals tips from Kobo Publisher's Newsletters.
 12. [Master Brand](#master-brand)
 13. [Price Effective Dates](#price-effective-dates)
 14. [YAN/YAF BISAC](#yanyaf-bisac)
-15. [New Geo Changer on Website](#new-geo-changer-on-website)
+15. [New country store view on Kobo.com](#new-country-store-view-on-kobo-com)
 
 
 ## Titles & Subtitles 
@@ -650,7 +650,7 @@ Basic mapping from the JUV and JNF BISAC codes to the new YAF and YAN BISAC Code
 Please do not mix young adult BISAC codes with juvenile or adult BISAC codes.
  
 ### __Links:__
-YAF Codes: http://bisg.org/page/YAFiction
+YAF Codes: http://bisg.org/page/YAFiction</br>
 YAN Codes: http://bisg.org/page/YANonFiction
  
 ### __ONIX 2.1 and 3.0 Composites using YAF:__</br>
@@ -676,3 +676,11 @@ __Short Tags:__</br>
 `<b067>10</b067>`</br>
 `<b069>YAN006050</b069>`</br>
 `</Subject>`</br>
+
+
+
+## New country store view on Kobo.com
+ 
+You may have noticed that we have recently made some adjustments to our store page at www.kobo.com. You can now see how our store looks in different countries throughout the world. When you first visit the online store, you will see a welcome screen where you can choose your country. You can also change your country by clicking on the flag icon on our main page, and can now choose from 36 different countries.
+ 
+[Try it out >](http://kobo.us5.list-manage.com/track/click?u=c032db3d20aa5ba495901131a&id=af4b6a1be6&e=899d096d2f)
