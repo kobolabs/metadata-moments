@@ -339,9 +339,9 @@ best practice to include it.
 
   **Common Errors:**
 * Representing a number with a text value (e.g. "sixteen" rather than "16”).
-* Adding characters that are not numbers (e.g. "18+" or “18 and up” rather than "18").
-
-  **Onix 2.1 and 3.0 Composite:**
+* Adding characters that are not numbers (e.g. "18+" or “18 and up” rather than "18").</br>
+  
+  **Onix 2.1 and 3.0 Composite:**</br>
 For example, the following composite tells us that this title is for Interest Ages 8-12:
 </br>`<audiencerange>`</br>
 `<b074>17</b074>`</br>
