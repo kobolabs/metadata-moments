@@ -6,7 +6,7 @@ A complilation of all the metadata moments shared by Kobo on the Kobo Publishers
 
 ### Table of Contents
 
-1. [Titles & Subtitles](#titles-&-subtitles)
+1. [Titles & Subtitles](#titles--subtitles)
 2. [Publishing Status](#publishing-status)
 3. [Category codes](#category-codes)
 4. [Be Aware of your Dates](#be-aware-of-your-dates)
