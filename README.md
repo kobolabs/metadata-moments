@@ -2,8 +2,17 @@
 
 What's in this document:
 A complilation of all the metadata moments shared by Kobo on the Kobo Publishers’ Newsletter.
- 
 
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+  
 ### Table of Contents
 
 1. [Titles & Subtitles](#titles--subtitles)
@@ -146,31 +155,31 @@ BIC</br>
 `</subject>`</br>
 
 **NOTE : We only support BISAC, CULTURA, BIC and CLIL.**</br>
-'10': 'BISAC',
-'12': 'BIC',
-'20': 'Keywords',
-'29': 'CLIL',
-'78': 'C_CODE',
+'10': 'BISAC',</br>
+'12': 'BIC',</br>
+'20': 'Keywords',</br>
+'29': 'CLIL',</br>
+'78': 'C_CODE',</br>
 If code is ‘24’ we use what is in `<SubjectSchemeName>`</br>
 
-**Useful links:**
-• BISAC category codes : https://www.bisg.org/complete-bisac-subject-headings-2014-edition
-• For all BIC subject codes and qualifiers, see http://www.bic.org.uk/7/BIC-Standard-SubjectCategories/
+**Useful links:**</br>
+• BISAC category codes : https://www.bisg.org/complete-bisac-subject-headings-2014-edition</br>
+• For all BIC subject codes and qualifiers, see http://www.bic.org.uk/7/BIC-Standard-SubjectCategories/</br>
 • ONIX Code Lists Issue 27 - Subject scheme identifier code : http://home.bicmedia.com/onix_info/2-1-4/codelists/onix-codelist-27.htm
 
 ## Be Aware of your Dates!
 
 Dates matter! This is one of the most important pieces of information to be included in your metadata in order to be sure your titles will be on sale at the right time. You can manage preorders and promotions by effectively using date composites.
 
-#### Best Practice**</br>
+#### Best Practice</br>
 
-**Publication Date**</br>
+**_Publication Date_**</br>
 
 • Your eBook's publication date is what appears on the product/item page on the
 Kobo store. It is a display value only and does not trigger sales.
 • If no publication date is included, the default date is set to December 2009. 
 
-**On Sale Date/Embargo date**</br>
+**_On Sale Date/Embargo date_**</br>
 
 • The On Sale Date is when your title is made active on site. If your book is
 available for preorder, it is the date it goes from preorder to regular sale. This is
@@ -182,28 +191,27 @@ is loaded.
 *In ONIX 3.0 the Embargo Date should be used as the On Sale Date field is
 deprecated.
 
-**Announcement date**</br>
+**_Announcement date_**</br>
 
 • The date when a new product may be announced to the general public, typically
 triggering pre-order status.</br>
 • Kobo reads and stores this tag but the functionality is not yet supported. You can
 still send metadata as it will be stored until we support this date field.
 
-**Dates in price composites (applies to ONIX metadata only)**</br>
+**_Dates in price composites (applies to ONIX metadata only)_**</br>
 
-• Price Effective Date composites allow you to schedule promotional prices with
-your ONIX feed. </br>
+• Price Effective Date composites allow you to schedule promotional prices with your ONIX feed. </br>
 
 • Some best practices include:</br>
-1. Your starting regular price must have an end date. Otherwise, our system
+  * Your starting regular price must have an end date. Otherwise, our system
 won’t know to look for a new price.</br>
-2. The promo price must have both a start and end date.</br>
-3. Your regular price is reinstated by including a new start date. All dates are
+  * The promo price must have both a start and end date.</br>
+  * Your regular price is reinstated by including a new start date. All dates are
 inclusive: they start at 0:00 EST and end at 23:59 EST of the specified
 date.
 
 **tags:**</br>
-• *Publication Date </br>
+• _Publication Date_ </br>
 
 ONIX 2.1
 Reference name:
@@ -226,7 +234,7 @@ Short tag:
 Excel
 Publication Date: 2015-09-19
 
-• *On Sale Date/Embargo date</br>
+• _On Sale Date/Embargo date_</br>
 
 ONIX 2.1 (On Sale Date)</br>
 Reference name:</br>
@@ -249,7 +257,7 @@ Short tag:</br>
 Excel</br>
 OnSale Date: 2015-02-19
 
-• *Announcement date</br>
+• _Announcement date_</br>
 
 ONIX 3.0</br>
 Reference name:</br>
@@ -266,7 +274,7 @@ Short tag:</br>
 Excel
 Announcement Date: 2015-02-19
 
-• *Price Effective Dates [ONIX only] </br>
+• _Price Effective Dates [ONIX only]_ </br>
 
 ONIX 2.1 example (with embedded notes for clarification):</br>
 `<price>`</br>
