@@ -1,4 +1,4 @@
-![background sidebar image](https://github.com/kobolabs/metadata-moments/blob/master/banner.jpg)
+![background sidebar image](https://github.com/kobolabs/metadata-moments/blob/master/BlogPost_headergraphic_0ebae005-246b-4469-9a2b-2ff6b17e2037-prv.jpg)
 
 #Kobo Metadata Moments - A compilation
 
