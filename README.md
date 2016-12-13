@@ -1,18 +1,15 @@
 ![background sidebar image](https://github.com/kobolabs/metadata-moments/blob/master/banner-openUp.png)
 
-#Kobo Metadata Moments - A compilation
-
-Recommendations and tips for producing better content on Kobo!</br>
-A compilation of the technicals tips from Kobo Publisher's Newsletters.
+#Kobo Metadata Moments
 
   
 ### Table of Contents
-
+#### Metadata
 1. [Titles & Subtitles](#titles--subtitles)
 2. [Publishing Status](#publishing-status)
 3. [Audience Ranges](#audience-ranges)
 4. [Category codes](#category-codes)
-5. [Be Aware of your Dates](#be-aware-of-your-dates)
+5. [Dates](#dates)
 6. [Prices and Price Type Codes](#prices-and-price-type-codes)
 7. [Sales Rights](#sales-rights)
 8. [Related Product](#related-product)
@@ -22,7 +19,11 @@ A compilation of the technicals tips from Kobo Publisher's Newsletters.
 12. [Master Brand](#master-brand)
 13. [Price Effective Dates](#price-effective-dates)
 14. [YAN/YAF BISAC](#yanyaf-bisac)
-15. [New country store view on Kobo.com](#new-country-store-view-on-kobocom)
+
+
+#### Miscellaneous/Other Updates
+
+1. [New country store view on Kobo.com](#new-country-store-view-on-kobocom)
 
  </br></br>
 
@@ -175,7 +176,7 @@ If code is ‘24’ we use what is in `<SubjectSchemeName>`</br>
 • ONIX Code Lists Issue 27 - Subject scheme identifier code : http://home.bicmedia.com/onix_info/2-1-4/codelists/onix-codelist-27.htm
 
 </br></br>
-## Be Aware of your Dates!
+## Dates
 
 Dates matter! This is one of the most important pieces of information to be included in your metadata in order to be sure your titles will be on sale at the right time. You can manage preorders and promotions by effectively using date composites.
 
