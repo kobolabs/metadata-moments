@@ -5,25 +5,30 @@
   
 ### Table of Contents
 #### Metadata
-1. [Titles & Subtitles](#titles--subtitles)
-2. [Publishing Status](#publishing-status)
-3. [Audience Ranges](#audience-ranges)
-4. [Category codes](#category-codes)
-5. [Dates](#dates)
-6. [Prices and Price Type Codes](#prices-and-price-type-codes)
-7. [Sales Rights](#sales-rights)
-8. [Related Product](#related-product)
-9. [TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobos-launch-in-turkey)
-10. [BISAC codes](#bisac-codes)
-11. [Announcement Date](#announcement-date)
-12. [Master Brand](#master-brand)
-13. [Price Effective Dates](#price-effective-dates)
-14. [YAN/YAF BISAC](#yanyaf-bisac)
 
+##### Title Details
+[Titles & Subtitles](#titles--subtitles)
+[Related Product](#related-product)
+[Master Brand](#master-brand)
+##### Categorisation
+[Audience Ranges](#audience-ranges)
+[Category codes](#category-codes)
+[BISAC codes](#bisac-codes)
+[YAN/YAF BISAC](#yanyaf-bisac)
+##### Dates
+[Dates](#dates)
+[Announcement Date](#announcement-date)
+[Price Effective Dates](#price-effective-dates)
+##### Prices
+[Prices and Price Type Codes](#prices-and-price-type-codes)
+[TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobos-launch-in-turkey)
+##### Sales Rights
+[Publishing Status](#publishing-status)
+[Sales Rights](#sales-rights) 
 
 #### Miscellaneous/Other Updates
 
-1. [New country store view on Kobo.com](#new-country-store-view-on-kobocom)
+[New country store view on Kobo.com](#new-country-store-view-on-kobocom)
 
  </br></br>
 
