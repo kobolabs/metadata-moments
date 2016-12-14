@@ -65,9 +65,7 @@ composites are for!</br>
 `</TitleElement>`</br>
 `</TitleDetail>`</br>
 
-</br>
-[back to table of Contents](#table-of-contents)
-</br>
+</br></br>
 ## Publishing Status
 
 **ONIX**
