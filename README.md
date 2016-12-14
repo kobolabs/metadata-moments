@@ -92,7 +92,6 @@ preorder by using the value active. To remove your title from sale, simply use t
 deactivated.
 
 </br>
-[back to table of Contents](#table-of-contents)
 </br>
 ## Category Codes
 
@@ -182,7 +181,6 @@ If code is ‘24’ we use what is in `<SubjectSchemeName>`</br>
 • ONIX Code Lists Issue 27 - Subject scheme identifier code : http://home.bicmedia.com/onix_info/2-1-4/codelists/onix-codelist-27.htm
 
 </br>
-[back to table of Contents](#table-of-contents)
 </br>
 ## Dates
 
@@ -352,7 +350,6 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 **--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
 
 </br>
-[back to table of Contents](#table-of-contents)
 </br>
 
 ## Audience Ranges
@@ -386,7 +383,6 @@ This example tells us this title is for Interest Ages 6+:</br>
 `</AudienceRange>`</br>
 
 </br>
-[back to table of Contents](#table-of-contents)
 </br>
 ## Prices and Price Type Codes
  
@@ -442,7 +438,6 @@ Currency: CAD
 `</price>`</br>
 
 </br>
-[back to table of Contents](#table-of-contents)
 </br>
 ## Sales Rights
 
@@ -464,8 +459,8 @@ Please use upper-case characters and separate each territory with a space in `<R
 ### ONIX 3.0:</br>
 Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>` https://www.medra.org/stdoc/onix-codelist-91.htm 
 Excel (column V Excel template): Leave this field blank if you have world rights. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma. For example: CA, US, GB
+
 </br>
-[back to table of Contents](#table-of-contents)
 </br>
  
 ## Related Product
@@ -524,7 +519,6 @@ __Short Tags:——</br>
 * ProductForm BA equals Book
 
 </br>
-[back to table of Contents](#table-of-contents)
 </br>
 ## TRY pricing tips for Kobo’s launch in Turkey
 
@@ -555,7 +549,6 @@ Turkey is a VAT-inclusive territory, as such we recommend that prices delivered 
  
 __Please note:__ If a publisher does not have the capability to include TRY prices in their metadata, depending on your agreement with Kobo, we will continue to convert from the list price and currency with TR territory rights into the local Turkish price.
 </br>
-[back to table of Contents](#table-of-contents)
 </br>
 ## BISAC Codes
  
@@ -611,9 +604,7 @@ __Short Tags:__</br>
 * `<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>` = BISAC category type
 * `<Subject Code>` = category code
 
-</br>
-[back to table of Contents](#table-of-contents)
-</br>
+</br></br>
 ## Announcement Date
  
 Announcement Date is the day that your product may first be made available for sale to the public. Used most often with preorders, this is the first day that the preorder page will be available on Kobo. If you plan to use announcement date to control the availability of a preorder, please ensure this date is set before the On Sale Date, otherwise the preorder period will not be valid. If no announcement date is provided, your preorder will be available when the metadata and cover are loaded.
@@ -629,9 +620,7 @@ Using ONIX 3.0, Announcement Date is provided with the following composite:
 * Onix 2.1 does not have a composite for Announcement Date.
 * Publishers sending excel metadata can indicate Announcement Date in column Y of the excel template.
 
-</br>
-[back to table of Contents](#table-of-contents)
-</br>
+</br></br>
 ## Master Brand 
  
 Master Brand refers to a specific character, name or title that exists across multiple series and product forms, and possibly multiple imprints or publishers. It is important to note that Master Brand is not limited to books. This designation is helpful when trying to improve the discoverability of your title, specifically children’s titles featuring popular characters (e.g. Winnie the Pooh). This can be nested within a collection or series. Currently Kobo only sorts by Master Brand in the kids' store, but we store information for all products.
@@ -654,9 +643,7 @@ __Using ONIX 3.0__, the following composite is used:</br>
  </br>
 In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
 
-</br>
-[back to table of Contents](#table-of-contents)
-</br>
+</br></br>
 ## Price Effective Dates
  
 Price effective dates allow you to schedule price changes in advance in your ONIX feed. This composite is especially useful for price promotions — you can schedule the dates of the price drop and return to regular price in the same ONIX feed.
@@ -669,9 +656,7 @@ __Requirements to schedule a price promo:__
 
 [Click here](#-price-effective-dates-onix-only-) for example of a sample scheduled price reduction, with embedded comments for clarification.
 
-</br>
-[back to table of Contents](#table-of-contents)
-</br>
+</br></br>
 ## YAN/YAF BISAC
  
 In 2015, BISG introduced Young Adult Fiction (YAF) and Young Adult Nonfiction (YAN) subject codes to replace JNF and JUV codes aimed at young adult readers. Kobo accepts all YAF and YAN BISAC codes. Like JNF and JUV codes, using accurate YAF and YAN BISAC codes will allow books to be included in our kids’ store. The new YA BISAC codes make it easier for a growing customer base of young adult readers to discover new books on Kobo.
@@ -712,9 +697,7 @@ __Short Tags:__</br>
 `</Subject>`</br>
 
 
-</br>
-[back to table of Contents](#table-of-contents)
-</br>
+</br></br>
 ## New country store view on Kobo.com
  
 You may have noticed that we have recently made some adjustments to our store page at www.kobo.com. You can now see how our store looks in different countries throughout the world. When you first visit the online store, you will see a welcome screen where you can choose your country. You can also change your country by clicking on the flag icon on our main page, and can now choose from 36 different countries.
