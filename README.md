@@ -2,32 +2,29 @@
 
 #Kobo Metadata Moments
 
-  
 ### Table of Contents
-#### Metadata
-
-##### Title Details
+* ####Metadata
+  * **Title Details**</br>
 [Titles & Subtitles](#titles--subtitles)
 [Related Product](#related-product)
 [Master Brand](#master-brand)
-##### Categorisation
+  * **Categorisation**</br>
 [Audience Ranges](#audience-ranges)
 [Category codes](#category-codes)
 [BISAC codes](#bisac-codes)
 [YAN/YAF BISAC](#yanyaf-bisac)
-##### Dates
+  * **Dates**</br>
 [Dates](#dates)
 [Announcement Date](#announcement-date)
 [Price Effective Dates](#price-effective-dates)
-##### Prices
+  * **Prices**</br>
 [Prices and Price Type Codes](#prices-and-price-type-codes)
 [TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobos-launch-in-turkey)
-##### Sales Rights
+  * **Sales Rights**</br>
 [Publishing Status](#publishing-status)
 [Sales Rights](#sales-rights) 
 
-#### Miscellaneous/Other Updates
-
+* ####Miscellaneous/Other Updates
 [New country store view on Kobo.com](#new-country-store-view-on-kobocom)
 
  </br></br>
