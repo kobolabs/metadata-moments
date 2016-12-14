@@ -2,8 +2,8 @@
 
 #Kobo Metadata Moments
 
-### Table of Contents
-#### Metadata
+## Table of Contents
+### Metadata
   1. **Title Details**</br>
 * [Titles & Subtitles](#titles--subtitles)</br>
 * [Related Product](#related-product)</br>
@@ -24,8 +24,8 @@
 * [Publishing Status](#publishing-status)</br>
 * [Sales Rights](#sales-rights) </br>
 
-* ####Miscellaneous/Other Updates
-[New country store view on Kobo.com](#new-country-store-view-on-kobocom)</br>
+### Miscellaneous/Other Updates
+   * [New country store view on Kobo.com](#new-country-store-view-on-kobocom)</br>
 
  </br></br>
 
