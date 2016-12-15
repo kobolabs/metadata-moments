@@ -715,7 +715,6 @@ Excel (column V Excel template): Leave this field blank if you have world rights
 
 </br>
 </br>
-
 # Miscellaneous/Other Updates</br>
 
 ## New country store view on Kobo.com
