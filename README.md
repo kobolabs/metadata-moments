@@ -29,8 +29,9 @@
 
  </br></br>
 # Metadata</br>
+
 ## Titles & Subtitles 
- 
+
 The `<TitleText>` tag should only include the title. Titles are displayed on our site as they are
 submitted in the `<TitleText>`. There are separate tags for subtitle, series information, edition,
 and author name - proper use of tags means better discovery on our site. 
@@ -714,7 +715,7 @@ Excel (column V Excel template): Leave this field blank if you have world rights
 
 </br>
 </br>
----------------------------------------------------
+
 # Miscellaneous/Other Updates</br>
 
 ## New country store view on Kobo.com
