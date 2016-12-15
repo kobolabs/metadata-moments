@@ -711,11 +711,11 @@ Please use upper-case characters and separate each territory with a space in `<R
 
 ### ONIX 3.0:</br>
 Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>` https://www.medra.org/stdoc/onix-codelist-91.htm 
-Excel (column V Excel template): Leave this field blank if you have world rights. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma. * For example: CA, US, GB</br>
+Excel (column V Excel template): Leave this field blank if you have world rights. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma. For example: CA, US, GB</br>
 
 </br>
 </br>
-# Miscellaneous/Other Updates</br>
+#  Miscellaneous/Other Updates</br>
 
 ## New country store view on Kobo.com
  
