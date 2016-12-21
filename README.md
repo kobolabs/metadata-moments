@@ -16,7 +16,7 @@
 * [YAN/YAF BISAC](#yanyaf-bisac)</br>
 * [Master Brand](#master-brand)</br>
   4. **Dates**</br>
-* [Publication Date, On Sale Date & Announcement Date](#dates)
+* [Publication Date, On Sale Date & Announcement Date](#publication-date-on-sale-date--announcement-date)
 * [Announcement Date](#announcement-date)</br>
   5. **Prices**</br>
 * [Price Effective Dates](#price-effective-dates)</br>
