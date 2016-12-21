@@ -16,7 +16,7 @@
 * [YAN/YAF BISAC](#yanyaf-bisac)</br>
 * [Master Brand](#master-brand)</br>
   4. **Dates**</br>
-* [Publication Date, On Sale Date & Announcement Date](#publication-date-on-sale-date--announcement-date)
+* [Publication Date & On Sale Date](#publication-date--on-sale-date)
 * [Announcement Date](#announcement-date)</br>
   5. **Prices**</br>
 * [Price Effective Dates](#price-effective-dates)</br>
@@ -387,7 +387,7 @@ __Using ONIX 3.0__, the following composite is used:</br>
 In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
 
 </br></br>
-## Publication Date, On Sale Date & Announcement Date
+## Publication Date & On Sale Date
 
 This is one of the most important pieces of information to be included in your metadata in order to be sure your titles will be on sale at the right time. You can manage preorders and promotions by effectively using date composites.
 
@@ -410,25 +410,6 @@ is set in the past or is missing, the default On Sale Date will be the date meta
 is loaded.</br>
 _In ONIX 3.0 the Embargo Date should be used as the On Sale Date field is
 deprecated._
-
-**_Announcement date_**</br>
-
-• The date when a new product may be announced to the general public, typically
-triggering pre-order status.</br>
-• Kobo reads and stores this tag but the functionality is not yet supported. You can
-still send metadata as it will be stored until we support this date field.
-
-**_Dates in price composites (applies to ONIX metadata only)_**</br>
-
-• Price Effective Date composites allow you to schedule promotional prices with your ONIX feed. </br>
-
-• Some best practices include:</br>
-  * Your starting regular price must have an end date. Otherwise, our system
-won’t know to look for a new price.</br>
-  * The promo price must have both a start and end date.</br>
-  * Your regular price is reinstated by including a new start date. All dates are
-inclusive: they start at 0:00 EST and end at 23:59 EST of the specified
-date.
 
 **Tags:**</br>
 • **_Publication Date_** </br>
@@ -477,24 +458,67 @@ Short tag:</br>
 Excel</br>
 OnSale Date: 2015-02-19
 
-• **_Announcement date_**</br>
+</br>
+</br>
 
-ONIX 3.0</br>
-Reference name:</br>
+## Announcement Date
+ 
+Announcement Date is the day that your product may first be made available for sale to the public. Used most often with preorders, this is the first day that the preorder page will be available on Kobo. If you plan to use announcement date to control the availability of a preorder, please ensure this date is set before the On Sale Date, otherwise the preorder period will not be valid. If no announcement date is provided, your preorder will be available when the metadata and cover are loaded.
+ 
+Using ONIX 3.0, Announcement Date is provided with the following composite:
+ </br>
 `<PublishingDate>`</br>
-`<PublishingDateRole>09</PublishingDateRole>`</br>
-`<Date>20150219</Date>`</br>
+`<PublishingDateRole>09<PublishingDateRole>`</br>
+`<Date>20150109</Date>`</br>
 `</PublishingDate>`</br>
-Short tag:</br>
+ 
+ Short tag:</br>
 `<publishingdate>`</br>
 `<x448>09</x448>`</br>
 `<b306>20150219</b306>`</br>
 `</publishingdate>`</br>
 
-Excel
-Announcement Date: 2015-02-19
+* See [List 163](http://www.bic-media.com/dmrn/codelists/onix-codelist-163.htm): Publishing Date Role
+* Onix 2.1 does not have a composite for Announcement Date.
+* Publishers sending excel metadata can indicate Announcement Date in column Y of the excel template.
+Excel Announcement Date format: 2015-02-19
 
-#### • **_Price Effective Dates [ONIX only]_** </br>
+</br></br>
+## Master Brand 
+ 
+Master Brand refers to a specific character, name or title that exists across multiple series and product forms, and possibly multiple imprints or publishers. It is important to note that Master Brand is not limited to books. This designation is helpful when trying to improve the discoverability of your title, specifically children’s titles featuring popular characters (e.g. Winnie the Pooh). This can be nested within a collection or series. Currently Kobo only sorts by Master Brand in the kids' store, but we store information for all products.
+ 
+__Using ONIX 2.1__, Master Brand is provided with the following composite:
+ </br>
+`<OtherText>` </br>
+`<TextTypeCode>98</TextTypeCode>` </br>
+`<Text>Jack Reacher</Text>` </br>
+`</OtherText>` </br>
+
+__Using ONIX 3.0__, the following composite is used:</br>    
+`<TitleDetail>` </br>
+`<TitleType>01<\TitleType>` </br>
+`<TitleElement>` </br>
+`<TitleElementLevel>05</TitleElementLevel>` </br>
+`<TitleText>Jack Reacher</TitleText>` </br>
+`</TitleElement>` </br>
+`</TitleDetail>` </br>
+ </br>
+In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
+
+</br></br>
+
+## Price Effective Dates
+ 
+Price effective dates allow you to schedule price changes in advance in your ONIX feed. This composite is especially useful for price promotions — you can schedule the dates of the price drop and return to regular price in the same ONIX feed.
+ 
+__Requirements to schedule a price promo:__
+
+* Ensure your starting regular price has an end date. Otherwise, our system won’t know to look for a new price.
+* Ensure the promo price has both a start and end date.
+* Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 EST and end at 23:59 EST of the specified date.
+
+Example of a sample scheduled price reduction, with embedded comments for clarification:
 
 ONIX 2.1 example (with embedded notes for clarification):</br>
 `<price>`</br>
@@ -554,60 +578,6 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `</Price>`</br>
 **--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
 
-</br>
-</br>
-
-## Announcement Date
- 
-Announcement Date is the day that your product may first be made available for sale to the public. Used most often with preorders, this is the first day that the preorder page will be available on Kobo. If you plan to use announcement date to control the availability of a preorder, please ensure this date is set before the On Sale Date, otherwise the preorder period will not be valid. If no announcement date is provided, your preorder will be available when the metadata and cover are loaded.
- 
-Using ONIX 3.0, Announcement Date is provided with the following composite:
- </br>
-`<PublishingDate>`</br>
-`<PublishingDateRole>09<PublishingDateRole>`</br>
-`<Date>20150109</Date>`</br>
-`</PublishingDate>`</br>
- 
-* See [List 163](http://www.bic-media.com/dmrn/codelists/onix-codelist-163.htm): Publishing Date Role
-* Onix 2.1 does not have a composite for Announcement Date.
-* Publishers sending excel metadata can indicate Announcement Date in column Y of the excel template.
-
-</br></br>
-## Master Brand 
- 
-Master Brand refers to a specific character, name or title that exists across multiple series and product forms, and possibly multiple imprints or publishers. It is important to note that Master Brand is not limited to books. This designation is helpful when trying to improve the discoverability of your title, specifically children’s titles featuring popular characters (e.g. Winnie the Pooh). This can be nested within a collection or series. Currently Kobo only sorts by Master Brand in the kids' store, but we store information for all products.
- 
-__Using ONIX 2.1__, Master Brand is provided with the following composite:
- </br>
-`<OtherText>` </br>
-`<TextTypeCode>98</TextTypeCode>` </br>
-`<Text>Jack Reacher</Text>` </br>
-`</OtherText>` </br>
-
-__Using ONIX 3.0__, the following composite is used:</br>    
-`<TitleDetail>` </br>
-`<TitleType>01<\TitleType>` </br>
-`<TitleElement>` </br>
-`<TitleElementLevel>05</TitleElementLevel>` </br>
-`<TitleText>Jack Reacher</TitleText>` </br>
-`</TitleElement>` </br>
-`</TitleDetail>` </br>
- </br>
-In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
-
-</br></br>
-
-## Price Effective Dates
- 
-Price effective dates allow you to schedule price changes in advance in your ONIX feed. This composite is especially useful for price promotions — you can schedule the dates of the price drop and return to regular price in the same ONIX feed.
- 
-__Requirements to schedule a price promo:__
-
-* Ensure your starting regular price has an end date. Otherwise, our system won’t know to look for a new price.
-* Ensure the promo price has both a start and end date.
-* Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 EST and end at 23:59 EST of the specified date.
-
-[Click here](#-price-effective-dates-onix-only-) for example of a sample scheduled price reduction, with embedded comments for clarification.
 
 </br></br>
 ## Prices and Price Type Codes
