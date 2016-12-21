@@ -16,7 +16,7 @@
 * [YAN/YAF BISAC](#yanyaf-bisac)</br>
 * [Master Brand](#master-brand)</br>
   4. **Dates**</br>
-* [Dates](#dates)
+* [Publication Date, On Sale Date & Announcement Date](#dates)
 * [Announcement Date](#announcement-date)</br>
   5. **Prices**</br>
 * [Price Effective Dates](#price-effective-dates)</br>
@@ -387,7 +387,7 @@ __Using ONIX 3.0__, the following composite is used:</br>
 In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
 
 </br></br>
-## Dates
+## Publication Date, On Sale Date & Announcement Date
 
 This is one of the most important pieces of information to be included in your metadata in order to be sure your titles will be on sale at the right time. You can manage preorders and promotions by effectively using date composites.
 
