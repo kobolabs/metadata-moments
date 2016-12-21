@@ -7,21 +7,22 @@
   1. **Title Details**</br>
 * [Titles & Subtitles](#titles--subtitles)</br>
 * [Related Product](#related-product)</br>
-* [Master Brand](#master-brand)</br>
-  2. **Categorisation**</br>
+  2. **Publishing Details**</br>
+* [Publishing Status](#publishing-status)</br>
+  3. **Categorisation**</br>
 * [Audience Ranges](#audience-ranges)</br>
 * [Category codes](#category-codes)</br>
 * [BISAC codes](#bisac-codes)</br>
 * [YAN/YAF BISAC](#yanyaf-bisac)</br>
-  3. **Dates**</br>
+* [Master Brand](#master-brand)</br>
+  4. **Dates**</br>
 * [Dates](#dates)
 * [Announcement Date](#announcement-date)</br>
-  4. **Prices**</br>
+  5. **Prices**</br>
 * [Price Effective Dates](#price-effective-dates)</br>
 * [Prices and Price Type Codes](#prices-and-price-type-codes)</br>
 * [TRY pricing tips for Kobo’s launch in Turkey](#try-pricing-tips-for-kobos-launch-in-turkey)</br>
-  5. **Sales Rights**</br>
-* [Publishing Status](#publishing-status)</br>
+  6. **Sales Rights**</br>
 * [Sales Rights](#sales-rights) </br>
 
 ### Miscellaneous/Other Updates
@@ -122,29 +123,31 @@ __Short Tags:——</br>
 * ProductForm BA equals Book
 
 </br></br>
-## Master Brand 
- 
-Master Brand refers to a specific character, name or title that exists across multiple series and product forms, and possibly multiple imprints or publishers. It is important to note that Master Brand is not limited to books. This designation is helpful when trying to improve the discoverability of your title, specifically children’s titles featuring popular characters (e.g. Winnie the Pooh). This can be nested within a collection or series. Currently Kobo only sorts by Master Brand in the kids' store, but we store information for all products.
- 
-__Using ONIX 2.1__, Master Brand is provided with the following composite:
- </br>
-`<OtherText>` </br>
-`<TextTypeCode>98</TextTypeCode>` </br>
-`<Text>Jack Reacher</Text>` </br>
-`</OtherText>` </br>
+## Publishing Status
 
-__Using ONIX 3.0__, the following composite is used:</br>    
-`<TitleDetail>` </br>
-`<TitleType>01<\TitleType>` </br>
-`<TitleElement>` </br>
-`<TitleElementLevel>05</TitleElementLevel>` </br>
-`<TitleText>Jack Reacher</TitleText>` </br>
-`</TitleElement>` </br>
-`</TitleDetail>` </br>
- </br>
-In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
+**ONIX**
 
-</br></br>
+Publishing Status is a simple yet powerful tag in ONIX: it is the composite that can activate or
+deactivate a title without manual intervention.
+At Kobo, a value of 02 (Forthcoming) or 04 (Active) will activate a title, provided that its
+Activation Date is in the past. Any other value will deactivate the title (remove the title from
+sale), so we encourage you to review and update your catalogue, paying special attention to
+any titles with value 00 (Unspecified).
+It’s important to note that Publishing Status is required in ONIX 3.0. And while it’s not required
+in ONIX 2.1 it is considered the best practice to include it.
+
+`<PublishingStatus>04</PublishingStatus>`</br>
+or
+`<b394>04</b394>`</br>
+
+**Excel**
+
+In our excel template, we use column A: Publishing Status. A title will be available for sale or
+preorder by using the value active. To remove your title from sale, simply use the value
+deactivated.
+
+</br>
+</br>
 ## Audience Ranges
 
 Audience Range indicates the intended audience or readership age for a product. You may send
@@ -361,6 +364,29 @@ __Short Tags:__</br>
 `</Subject>`</br>
 
 </br></br>
+## Master Brand 
+ 
+Master Brand refers to a specific character, name or title that exists across multiple series and product forms, and possibly multiple imprints or publishers. It is important to note that Master Brand is not limited to books. This designation is helpful when trying to improve the discoverability of your title, specifically children’s titles featuring popular characters (e.g. Winnie the Pooh). This can be nested within a collection or series. Currently Kobo only sorts by Master Brand in the kids' store, but we store information for all products.
+ 
+__Using ONIX 2.1__, Master Brand is provided with the following composite:
+ </br>
+`<OtherText>` </br>
+`<TextTypeCode>98</TextTypeCode>` </br>
+`<Text>Jack Reacher</Text>` </br>
+`</OtherText>` </br>
+
+__Using ONIX 3.0__, the following composite is used:</br>    
+`<TitleDetail>` </br>
+`<TitleType>01<\TitleType>` </br>
+`<TitleElement>` </br>
+`<TitleElementLevel>05</TitleElementLevel>` </br>
+`<TitleText>Jack Reacher</TitleText>` </br>
+`</TitleElement>` </br>
+`</TitleDetail>` </br>
+ </br>
+In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
+
+</br></br>
 ## Dates
 
 This is one of the most important pieces of information to be included in your metadata in order to be sure your titles will be on sale at the right time. You can manage preorders and promotions by effectively using date composites.
@@ -468,46 +494,6 @@ Short tag:</br>
 Excel
 Announcement Date: 2015-02-19
 
-
-## Announcement Date
- 
-Announcement Date is the day that your product may first be made available for sale to the public. Used most often with preorders, this is the first day that the preorder page will be available on Kobo. If you plan to use announcement date to control the availability of a preorder, please ensure this date is set before the On Sale Date, otherwise the preorder period will not be valid. If no announcement date is provided, your preorder will be available when the metadata and cover are loaded.
- 
-Using ONIX 3.0, Announcement Date is provided with the following composite:
- </br>
-`<PublishingDate>`</br>
-`<PublishingDateRole>09<PublishingDateRole>`</br>
-`<Date>20150109</Date>`</br>
-`</PublishingDate>`</br>
- 
-* See [List 163](http://www.bic-media.com/dmrn/codelists/onix-codelist-163.htm): Publishing Date Role
-* Onix 2.1 does not have a composite for Announcement Date.
-* Publishers sending excel metadata can indicate Announcement Date in column Y of the excel template.
-
-</br></br>
-## Master Brand 
- 
-Master Brand refers to a specific character, name or title that exists across multiple series and product forms, and possibly multiple imprints or publishers. It is important to note that Master Brand is not limited to books. This designation is helpful when trying to improve the discoverability of your title, specifically children’s titles featuring popular characters (e.g. Winnie the Pooh). This can be nested within a collection or series. Currently Kobo only sorts by Master Brand in the kids' store, but we store information for all products.
- 
-__Using ONIX 2.1__, Master Brand is provided with the following composite:
- </br>
-`<OtherText>` </br>
-`<TextTypeCode>98</TextTypeCode>` </br>
-`<Text>Jack Reacher</Text>` </br>
-`</OtherText>` </br>
-
-__Using ONIX 3.0__, the following composite is used:</br>    
-`<TitleDetail>` </br>
-`<TitleType>01<\TitleType>` </br>
-`<TitleElement>` </br>
-`<TitleElementLevel>05</TitleElementLevel>` </br>
-`<TitleText>Jack Reacher</TitleText>` </br>
-`</TitleElement>` </br>
-`</TitleDetail>` </br>
- </br>
-In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
-
-</br></br>
 #### • **_Price Effective Dates [ONIX only]_** </br>
 
 ONIX 2.1 example (with embedded notes for clarification):</br>
@@ -570,6 +556,47 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 
 </br>
 </br>
+
+## Announcement Date
+ 
+Announcement Date is the day that your product may first be made available for sale to the public. Used most often with preorders, this is the first day that the preorder page will be available on Kobo. If you plan to use announcement date to control the availability of a preorder, please ensure this date is set before the On Sale Date, otherwise the preorder period will not be valid. If no announcement date is provided, your preorder will be available when the metadata and cover are loaded.
+ 
+Using ONIX 3.0, Announcement Date is provided with the following composite:
+ </br>
+`<PublishingDate>`</br>
+`<PublishingDateRole>09<PublishingDateRole>`</br>
+`<Date>20150109</Date>`</br>
+`</PublishingDate>`</br>
+ 
+* See [List 163](http://www.bic-media.com/dmrn/codelists/onix-codelist-163.htm): Publishing Date Role
+* Onix 2.1 does not have a composite for Announcement Date.
+* Publishers sending excel metadata can indicate Announcement Date in column Y of the excel template.
+
+</br></br>
+## Master Brand 
+ 
+Master Brand refers to a specific character, name or title that exists across multiple series and product forms, and possibly multiple imprints or publishers. It is important to note that Master Brand is not limited to books. This designation is helpful when trying to improve the discoverability of your title, specifically children’s titles featuring popular characters (e.g. Winnie the Pooh). This can be nested within a collection or series. Currently Kobo only sorts by Master Brand in the kids' store, but we store information for all products.
+ 
+__Using ONIX 2.1__, Master Brand is provided with the following composite:
+ </br>
+`<OtherText>` </br>
+`<TextTypeCode>98</TextTypeCode>` </br>
+`<Text>Jack Reacher</Text>` </br>
+`</OtherText>` </br>
+
+__Using ONIX 3.0__, the following composite is used:</br>    
+`<TitleDetail>` </br>
+`<TitleType>01<\TitleType>` </br>
+`<TitleElement>` </br>
+`<TitleElementLevel>05</TitleElementLevel>` </br>
+`<TitleText>Jack Reacher</TitleText>` </br>
+`</TitleElement>` </br>
+`</TitleDetail>` </br>
+ </br>
+In Kobo’s Excel template, simply input Master Brand information into the Main Character (brand) column. 
+
+</br></br>
+
 ## Price Effective Dates
  
 Price effective dates allow you to schedule price changes in advance in your ONIX feed. This composite is especially useful for price promotions — you can schedule the dates of the price drop and return to regular price in the same ONIX feed.
@@ -668,31 +695,7 @@ Turkey is a VAT-inclusive territory, as such we recommend that prices delivered 
 __Please note:__ If a publisher does not have the capability to include TRY prices in their metadata, depending on your agreement with Kobo, we will continue to convert from the list price and currency with TR territory rights into the local Turkish price.
 </br>
 </br>
-## Publishing Status
 
-**ONIX**
-
-Publishing Status is a simple yet powerful tag in ONIX: it is the composite that can activate or
-deactivate a title without manual intervention.
-At Kobo, a value of 02 (Forthcoming) or 04 (Active) will activate a title, provided that its
-Activation Date is in the past. Any other value will deactivate the title (remove the title from
-sale), so we encourage you to review and update your catalogue, paying special attention to
-any titles with value 00 (Unspecified).
-It’s important to note that Publishing Status is required in ONIX 3.0. And while it’s not required
-in ONIX 2.1 it is considered the best practice to include it.
-
-`<PublishingStatus>04</PublishingStatus>`</br>
-or
-`<b394>04</b394>`</br>
-
-**Excel**
-
-In our excel template, we use column A: Publishing Status. A title will be available for sale or
-preorder by using the value active. To remove your title from sale, simply use the value
-deactivated.
-
-</br>
-</br>
 ## Sales Rights
 
 The Sales Rights `<SalesRights>` composite is one of the most important ONIX fields in the metadata and should be carefully completed to respect publishing rights. The Sales Rights composite is a group of tags that specify the territorial sales rights chosen by the publisher for a given book, at a global product level. Publishers should clearly state the countries in which a product can be sold. You can also exclude specific countries if needed.
