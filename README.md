@@ -265,8 +265,7 @@ If code is ‘24’ we use what is in `<SubjectSchemeName>`</br>
 • For all BIC subject codes and qualifiers, see http://www.bic.org.uk/7/BIC-Standard-SubjectCategories/</br>
 • ONIX Code Lists Issue 27 - Subject scheme identifier code : http://home.bicmedia.com/onix_info/2-1-4/codelists/onix-codelist-27.htm
 
-</br>
-</br>
+</br></br>
 ## BISAC Codes
  
 Having accurate category codes ensures that books are properly categorized in our store, making discoverability easier for customers. While we accept BIC and CLIL category codes as well, BISAC is the most common category code we receive, and our categorization structure is based on BISAC. Kobo accepts the complete 2015 BISAC list published by BISG, including the new young adult (YAF and YAN) categories.
