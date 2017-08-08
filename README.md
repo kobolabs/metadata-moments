@@ -263,7 +263,7 @@ BIC</br>
 If code is ‘24’ we use what is in `<SubjectSchemeName>`</br>
 
 **Useful links:**</br>
-• BISAC category codes : https://www.bisg.org/complete-bisac-subject-headings-2014-edition</br>
+• BISAC category codes : http://bisg.org/page/bisacedition</br>
 • For all BIC subject codes and qualifiers, see http://www.bic.org.uk/7/BIC-Standard-SubjectCategories/</br>
 • ONIX Code Lists Issue 27 - Subject scheme identifier code : http://home.bicmedia.com/onix_info/2-1-4/codelists/onix-codelist-27.htm
 
