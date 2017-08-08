@@ -146,8 +146,7 @@ In our excel template, we use column A: Publishing Status. A title will be avail
 preorder by using the value active. To remove your title from sale, simply use the value
 deactivated.
 
-</br>
-</br>
+</br></br>
 ## Audience Ranges
 
 Audience Range indicates the intended audience or readership age for a product. You may send
@@ -178,8 +177,7 @@ This example tells us this title is for Interest Ages 6+:</br>
 `<AudienceRangeValue>6</AudienceRangeValue>`</br>
 `</AudienceRange>`</br>
 
-</br>
-</br>
+</br></br>
 ## Category Codes
 
 A subject category code from the scheme identified (BISAC, BIC, etc) will help catalogue your
